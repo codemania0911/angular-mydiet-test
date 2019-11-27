@@ -92,6 +92,7 @@ export class ShowDietComponent implements OnInit {
     //end example data
 
     //back-end laravel service api
+    // api pre-word laravel routes
     this.http.post<any>('http://localhost:8000/api/getdietplan', this.sendData)
     .subscribe( (response) => {
       console.log('success', response);
