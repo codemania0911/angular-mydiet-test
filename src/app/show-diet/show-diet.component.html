@@ -1,0 +1,448 @@
+<section class="s-pt-40 s-pb-30 s-py-lg-130 timetable ds text-center text-md-left" id="timetables">
+    <div class="container">
+        <div class="row">
+            <form class="woocommerce-ordering">
+                <select name="orderby" class="orderby" (change)="selectWeek($event)">
+                    <option value="1">Week 1</option>
+                    <option value="2">Week 2</option>
+                    <option value="3">Week 3</option>
+                    <option value="4">Week 4</option>
+                    <option value="5">Week 5</option>
+                    <option value="6">Week 6</option>
+                    <option value="7">Week 7</option>
+                    <option value="8">Week 8</option>
+                    <option value="9">Week 9</option>
+                </select>
+            </form>
+
+            <div class="col-12 text-center">
+                <div class="section-heading">
+                    <h3>Personalized meal plan</h3>
+                    <img class="image-wrap" src="../../assets/images/icon-main2.png" alt="">
+                </div>
+                <div class="d-none d-lg-block divider-60"></div>
+            </div>
+
+            <div class="col-12">
+                <ul class="nav nav-tabs form-tabs visible-md">
+                    <li class="tab-selector nav-item active">
+                        <a class="nav-link first" href="#tab1" data-toggle="tab">Day {{dayNum + 1}}</a>
+                    </li>
+                    <li class="tab-selector nav-item">
+                        <a class="nav-link" href="#tab2" data-toggle="tab">Day {{dayNum + 2}}</a>
+                    </li>
+                    <li class="tab-selector nav-item">
+                        <a class="nav-link" href="#tab3" data-toggle="tab">Day {{dayNum + 3}}</a>
+                    </li>
+                    <li class="tab-selector nav-item">
+                        <a class="nav-link" href="#tab4" data-toggle="tab">Day {{dayNum + 4}}</a>
+                    </li>
+                    <li class="tab-selector nav-item">
+                        <a class="nav-link" href="#tab5" data-toggle="tab">Day {{dayNum + 5}}</a>
+                    </li>
+                    <li class="tab-selector nav-item">
+                        <a class="nav-link" href="#tab6" data-toggle="tab">Day {{dayNum + 6}}</a>
+                    </li>
+                    <li class="tab-selector nav-item">
+                        <a class="nav-link last" href="#tab7" data-toggle="tab">Day {{dayNum + 7}}</a>
+                    </li>
+                </ul>
+                <select class="form-control hidden-md hidden-lg hidden-xl" id="tab_selector">
+                    <option value="0">Day {{dayNum + 1}}</option>
+                    <option value="1">Day {{dayNum + 2}}</option>
+                    <option value="2">Day {{dayNum + 3}}</option>
+                    <option value="3">Day {{dayNum + 4}}</option>
+                    <option value="4">Day {{dayNum + 5}}</option>
+                    <option value="5">Day {{dayNum + 6}}</option>
+                    <option value="6">Day {{dayNum + 7}}</option>
+                </select>
+                
+                <div class="tab-content">
+                    <div class="tab-pane active" id="tab1">
+                        <div class="media bordered" >
+                            <a href="#" class="ds">
+                                <img src="{{breakfast[dayNum].imageUrl}}" alt="">
+                            </a>
+                            <div class="media-body">
+                                <h5>
+                                    {{breakfast[dayNum].name}}
+                                </h5>
+                                <div class="btn-timetable">
+                                    Breakfast
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media bordered">
+                            <a href="#" class="ds">
+                                <img src="{{brunch[dayNum].imageUrl}}" alt="">
+                            </a>
+                            <div class="media-body">
+                                <h5>
+                                    {{brunch[dayNum].name}}
+                                </h5>
+                                <div class="btn-timetable">
+                                    Brunch
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media bordered">
+                            <a href="#" class="ds">
+                                <img src="{{lunch[dayNum].imageUrl}}" alt="">
+                            </a>
+                            <div class="media-body">
+                                <h5>
+                                    {{lunch[dayNum].name}}
+                                </h5>
+                                <div class="btn-timetable">
+                                    Lunch
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media bordered">
+                            <a href="#" class="ds">
+                                <img src="{{dinner[dayNum].imageUrl}}" alt="">
+                            </a>
+                            <div class="media-body">
+                                <h5>
+                                    {{dinner[dayNum].name}}
+                                </h5>
+                                <div class="btn-timetable">
+                                    Dinner
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="tab2">
+                        <div class="media bordered">
+                            <a href="#" class="ds">
+                                <img src="{{breakfast[dayNum+1].imageUrl}}" alt="">
+                            </a>
+                            <div class="media-body">
+                                <h5>
+                                    {{breakfast[dayNum+1].name}}
+                                </h5>
+                                <div class="btn-timetable">
+                                    Breakfast
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media bordered">
+                            <a href="#" class="ds">
+                                <img src="{{brunch[dayNum+1].imageUrl}}" alt="">
+                            </a>
+                            <div class="media-body">
+                                <h5>
+                                    {{brunch[dayNum+1].name}}
+                                </h5>
+                                <div class="btn-timetable">
+                                    Brunch
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media bordered">
+                            <a href="#" class="ds">
+                                <img src="{{lunch[dayNum+1].imageUrl}}" alt="">
+                            </a>
+                            <div class="media-body">
+                                <h5>
+                                    {{lunch[dayNum+1].name}}
+                                </h5>
+                                <div class="btn-timetable">
+                                    Lunch
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media bordered">
+                            <a href="#" class="ds">
+                                <img src="{{dinner[dayNum+1].imageUrl}}" alt="">
+                            </a>
+                            <div class="media-body">
+                                <h5>
+                                    {{dinner[dayNum+1].name}}
+                                </h5>
+                                <div class="btn-timetable">
+                                    Dinner
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="tab3">
+                        <div class="media bordered">
+                            <a href="#" class="ds">
+                                <img src="{{breakfast[dayNum+2].imageUrl}}" alt="">
+                            </a>
+                            <div class="media-body">
+                                <h5>
+                                    {{breakfast[dayNum+2].name}}
+                                </h5>
+                                <div class="btn-timetable">
+                                    Breakfast
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media bordered">
+                            <a href="#" class="ds">
+                                <img src="{{brunch[dayNum+2].imageUrl}}" alt="">
+                            </a>
+                            <div class="media-body">
+                                <h5>
+                                    {{brunch[dayNum+2].name}}
+                                </h5>
+                                <div class="btn-timetable">
+                                    Brunch
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media bordered">
+                            <a href="#" class="ds">
+                                <img src="{{lunch[dayNum+2].imageUrl}}" alt="">
+                            </a>
+                            <div class="media-body">
+                                <h5>
+                                    {{lunch[dayNum+2].name}}
+                                </h5>
+                                <div class="btn-timetable">
+                                    Lunch
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media bordered">
+                            <a href="#" class="ds">
+                                <img src="{{dinner[dayNum+2].imageUrl}}" alt="">
+                            </a>
+                            <div class="media-body">
+                                <h5>
+                                    {{dinner[dayNum+2].name}}
+                                </h5>
+                                <div class="btn-timetable">
+                                    Dinner
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="tab4">
+                        <div class="media bordered">
+                            <a href="#" class="ds">
+                                <img src="{{breakfast[dayNum+3].imageUrl}}" alt="">
+                            </a>
+                            <div class="media-body">
+                                <h5>
+                                    {{breakfast[dayNum+3].name}}
+                                </h5>
+                                <div class="btn-timetable">
+                                    Breakfast
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media bordered">
+                            <a href="#" class="ds">
+                                <img src="{{brunch[dayNum+3].imageUrl}}" alt="">
+                            </a>
+                            <div class="media-body">
+                                <h5>
+                                    {{brunch[dayNum+3].name}}
+                                </h5>
+                                <div class="btn-timetable">
+                                    Brunch
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media bordered">
+                            <a href="#" class="ds">
+                                <img src="{{lunch[dayNum+3].imageUrl}}" alt="">
+                            </a>
+                            <div class="media-body">
+                                <h5>
+                                    {{lunch[dayNum+3].name}}
+                                </h5>
+                                <div class="btn-timetable">
+                                    Lunch
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media bordered">
+                            <a href="#" class="ds">
+                                <img src="{{dinner[dayNum+3].imageUrl}}" alt="">
+                            </a>
+                            <div class="media-body">
+                                <h5>
+                                    {{dinner[dayNum+3].name}}
+                                </h5>
+                                <div class="btn-timetable">
+                                    Dinner
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="tab5">
+                        <div class="media bordered">
+                            <a href="#" class="ds">
+                                <img src="{{breakfast[dayNum+4].imageUrl}}" alt="">
+                            </a>
+                            <div class="media-body">
+                                <h5>
+                                    {{breakfast[dayNum+4].name}}
+                                </h5>
+                                <div class="btn-timetable">
+                                    Breakfast
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media bordered">
+                            <a href="#" class="ds">
+                                <img src="{{brunch[dayNum+4].imageUrl}}" alt="">
+                            </a>
+                            <div class="media-body">
+                                <h5>
+                                    {{brunch[dayNum+4].name}}
+                                </h5>
+                                <div class="btn-timetable">
+                                    Brunch
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media bordered">
+                            <a href="#" class="ds">
+                                <img src="{{lunch[dayNum+4].imageUrl}}" alt="">
+                            </a>
+                            <div class="media-body">
+                                <h5>
+                                    {{lunch[dayNum+4].name}}
+                                </h5>
+                                <div class="btn-timetable">
+                                    Lunch
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media bordered">
+                            <a href="#" class="ds">
+                                <img src="{{dinner[dayNum+4].imageUrl}}" alt="">
+                            </a>
+                            <div class="media-body">
+                                <h5>
+                                    {{dinner[dayNum+4].name}}
+                                </h5>
+                                <div class="btn-timetable">
+                                    Dinner
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="tab6">
+                        <div class="media bordered">
+                            <a href="#" class="ds">
+                                <img src="{{breakfast[dayNum+5].imageUrl}}" alt="">
+                            </a>
+                            <div class="media-body">
+                                <h5>
+                                    {{breakfast[dayNum+5].name}}
+                                </h5>
+                                <div class="btn-timetable">
+                                    Breakfast
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media bordered">
+                            <a href="#" class="ds">
+                                <img src="{{brunch[dayNum+5].imageUrl}}" alt="">
+                            </a>
+                            <div class="media-body">
+                                <h5>
+                                    {{brunch[dayNum+5].name}}
+                                </h5>
+                                <div class="btn-timetable">
+                                    Brunch
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media bordered">
+                            <a href="#" class="ds">
+                                <img src="{{lunch[dayNum+5].imageUrl}}" alt="">
+                            </a>
+                            <div class="media-body">
+                                <h5>
+                                    {{lunch[dayNum+5].name}}
+                                </h5>
+                                <div class="btn-timetable">
+                                    Lunch
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media bordered">
+                            <a href="#" class="ds">
+                                <img src="{{dinner[dayNum+6].imageUrl}}" alt="">
+                            </a>
+                            <div class="media-body">
+                                <h5>
+                                    {{dinner[dayNum+6].name}}
+                                </h5>
+                                <div class="btn-timetable">
+                                    Dinner
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab7">
+                        <div class="media bordered">
+                            <a href="#" class="ds">
+                                <img src="{{breakfast[dayNum+6].imageUrl}}" alt="">
+                            </a>
+                            <div class="media-body">
+                                <h5>
+                                    {{breakfast[dayNum+6].name}}
+                                </h5>
+                                <div class="btn-timetable">
+                                    Breakfast
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media bordered">
+                            <a href="#" class="ds">
+                                <img src="{{brunch[dayNum+6].imageUrl}}" alt="">
+                            </a>
+                            <div class="media-body">
+                                <h5>
+                                    {{brunch[dayNum+6].name}}
+                                </h5>
+                                <div class="btn-timetable">
+                                    Brunch
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media bordered">
+                            <a href="#" class="ds">
+                                <img src="{{lunch[dayNum+6].imageUrl}}" alt="">
+                            </a>
+                            <div class="media-body">
+                                <h5>
+                                    {{lunch[dayNum+6].name}}
+                                </h5>
+                                <div class="btn-timetable">
+                                    Lunch
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media bordered">
+                            <a href="#" class="ds">
+                                <img src="{{dinner[dayNum+6].imageUrl}}" alt="">
+                            </a>
+                            <div class="media-body">
+                                <h5>
+                                    {{dinner[dayNum+6].name}}
+                                </h5>
+                                <div class="btn-timetable">
+                                    Dinner
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

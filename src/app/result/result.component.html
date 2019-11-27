@@ -1,0 +1,135 @@
+<section class="ls s-py-50 c-mb-30">
+    <div class="container">
+        <div class="row">
+            <div class="divider-70 d-none d-lg-block"></div>
+
+            <div class="col-12">
+                <h2>
+                    YOUR PROFILE SUMMARY
+                </h2>
+                <hr>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card text-center">
+
+                            <img class="card-img-top" src="../../assets/images/team/02.jpg" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    BMI
+                                </h5>
+                                <p class="card-text">
+                                    Your BMI: <b>{{bmi}}</b>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card text-center">
+
+                            <img class="card-img-top" src="../../assets/images/team/03.jpg" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Metabolic Age
+                                </h5>
+                                <p class="card-text">
+                                    Your Metabolic Age: <b>{{metabolicAge}}</b> age
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card text-center">
+
+                            <img class="card-img-top" src="../../assets/images/team/03.jpg" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Calories
+                                </h5>
+                                <p class="card-text">
+                                    Recommended Calories: <b>{{bmr}}</b>Kcal
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card text-center">
+
+                            <img class="card-img-top" src="../../assets/images/team/04.jpg" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    My weight
+                                </h5>
+                                <p class="card-text">
+                                    Your weight after your keto meal plan will be: <b>{{ weight }}</b> Kilograms
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card text-center">
+
+                            <img class="card-img-top" src="../../assets/images/team/03.jpg" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Achievable Weight
+                                </h5>
+                                <p class="card-text">
+                                    Achievable weight for 28 days of your Keto Diet: <b>{{archieve_weight}}</b>  Kilograms
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card text-center">
+
+                            <img class="card-img-top" src="../../assets/images/team/02.jpg" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Lose weight body parts
+                                </h5>
+                                <p class="card-text">
+                                    You'll lose weight from these parts:<span> Cheeks, belly, upper & lower limbs</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card text-center">
+
+                            <img class="card-img-top" src="../../assets/images/team/04.jpg" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Water
+                                </h5>
+                                <p class="card-title">
+                                    Recommended Water: <b>{{water}}</b> L 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div class="card text-center">
+
+                            <img class="card-img-top" src="../../assets/images/team/02.jpg" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Ketogenic Diet
+                                </h5>
+                                <p class="card-text">
+                                    Percentage content of fat, protein and carbs
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a [routerLink]="['/showdiet']" routerLinkActive="router-link-active"><div class="btn btn-light">Continue</div></a>
+            </div>
+        </div>
+    </div>
+</section>

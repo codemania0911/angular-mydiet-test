@@ -1,0 +1,108 @@
+.svg-material,
+.svg-male,
+.svg-female {
+  display: inline-block;
+  border: 2px solid #9a9a9a;
+  border-radius: 20px;
+}
+
+.svg-material:hover,
+.svg-male:hover,
+.svg-female:hover {
+  border-color: #78bf4d;
+  background-color: #78bf4d;
+}
+
+.svg-male {
+  padding: 10px 30px;
+}
+
+.svg-male img {
+  height: 120px;
+}
+
+.svg-female {
+  padding: 10px 35px;
+}
+
+.svg-female img {
+  height: 120px;
+}
+
+.diet-step-2 .btn {
+  background-color: transparent;
+  color: #fff;
+  display: block;
+  max-width: 545px;
+  margin: 30px auto 30px;
+}
+
+.diet-step-2 .btn:hover {
+  background-color: #78bf4d;
+  border-color: #78bf4d;
+}
+
+.diet-step-3 .btn {
+  background-color: transparent;
+  color: #fff;
+  display: block;
+  max-width: 545px;
+  margin: 30px auto 30px;
+}
+
+.diet-step-3 .btn:hover {
+  background-color: #78bf4d;
+  border-color: #78bf4d;
+}
+
+.diet-step-3 .row {
+  max-width: 545px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.diet-step-3 .svg-material {
+  padding: 10px 30px;
+}
+
+.diet-step-3 .svg-material.checked {
+  border-color: #78bf4d;
+  background-color: #78bf4d;
+}
+
+.diet-step-3 .svg-material img {
+  height: 120px;
+}
+
+.diet-step-4 .btn {
+  background-color: transparent;
+  color: #fff;
+  display: block;
+  max-width: 545px;
+  margin: 30px auto 30px;
+}
+
+.diet-step-4 .btn:hover {
+  background-color: #78bf4d;
+  border-color: #78bf4d;
+}
+
+.diet-step-4 .form-row {
+  max-width: 545px;
+  margin: 30px auto 30px;
+}
+
+.diet-step-5 .btn {
+  background-color: transparent;
+  color: #fff;
+  display: block;
+  max-width: 545px;
+  margin: 30px auto 30px;
+}
+
+.diet-step-5 .btn:hover {
+  background-color: #78bf4d;
+  border-color: #78bf4d;
+}
+
+/*# sourceMappingURL=../css/maps/custom.css.map */

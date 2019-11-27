@@ -1,0 +1,323 @@
+<div id="canvas">
+    <div id="box_wrapper">
+
+        <section class="ds">
+            <div id="step"
+                class="carousel slide  d-flex  justify-content-center text-center"
+                style="height: 100vh" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#step" data-slide-to="0"></li>
+                    <li data-target="#step" data-slide-to="1"></li>
+                    <li data-target="#step" data-slide-to="2"></li>
+                    <li data-target="#step" data-slide-to="3"></li>
+                    <li data-target="#step" data-slide-to="4"></li>
+                    <li data-target="#step" data-slide-to="5"></li>
+                    <li data-target="#step" data-slide-to="6"></li>
+                    <li data-target="#step" data-slide-to="7"></li>
+                    <li data-target="#step" data-slide-to="8"></li>
+                </ol>
+
+                <div class="carousel-inner">
+
+                    <!-- select gender-->
+                    <div class="carousel-item diet-step-1 active">
+                        <div class="svg-male mx-10" href="#step"  data-slide="next" (click)="setGender(1)">
+                            <img src="../../assets/images/svg/male.svg">
+                        </div>
+                        <div class="svg-female mx-10" href="#step"  data-slide="next" (click)="setGender(2)">
+                            <img src="../../assets/images/svg/female.svg">
+                        </div>
+                    </div>
+                    <!-- select gender-->
+
+                    <!-- select physical-->
+                    <div class="carousel-item diet-step-2">
+                        <div class="intro_layers_wrapper">
+                            <div class="intro_layers">
+                                <div class="d-inline-block">
+                                    <h2 class="intro_featured_word">
+                                        Physical activity
+                                    </h2>
+                                </div>
+
+                                <div class="intro_layers flex-btn" data-animation="fadeInUp">
+                                    <div class="btn btn-light" href="#step"  data-slide="next" (click)="setPhysical(1)">ALMOST NO PHYSICAL ACTIVITY</div>
+                                    <div class="btn btn-light" href="#step"  data-slide="next" (click)="setPhysical(2)">I OFTEN GO FOR A WALK</div>
+                                    <div class="btn btn-light" href="#step"  data-slide="next" (click)="setPhysical(3)">I EXERCISE 1-2 A WEEK</div>
+                                    <div class="btn btn-light" href="#step"  data-slide="next" (click)="setPhysical(4)">I EXERCISE 3-5 TIMES A WEEK</div>
+                                    <div class="btn btn-light" href="#step"  data-slide="next" (click)="setPhysical(5)">I EXERCISE 5-7 TIMES A WEEK</div>
+                                </div>
+
+                                <div class="btn btn-light" href="#step"  data-slide="prev">PREV</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- select physical-->
+
+                    <!-- select meat-->
+                    <div class="carousel-item diet-step-3">
+                        <div class="d-inline-block">
+                            <h2 class="intro_featured_word">
+                                Meat
+                            </h2>
+                        </div>
+
+                        <div class="intro_layer" data-animation="fadeInUp">
+                            <h6 class="intro_featured_word">
+                                COOKING IS EASY, WE WILL PROVE IT TO YOU!
+                            </h6>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-sm-4">
+                                <div class="svg-material svg-select" id="beef" value="beef" #beef>
+                                    <img src="../../assets/images/svg/beef.svg">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="svg-material svg-select" id="pork" value="pork" #pork>
+                                    <img src="../../assets/images/svg/pork.svg">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="svg-material svg-select" id="chicken" value="chicken" #chicken>
+                                    <img src="../../assets/images/svg/chicken.svg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row divider-25">
+                            <div class="col-sm-4">
+                                <div class="svg-material svg-select" id="bacon">
+                                    <img src="../../assets/images/svg/bacon.svg">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="svg-material svg-select" id="fish">
+                                    <img src="../../assets/images/svg/fish.svg">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="svg-material svg-select" id="nomeat">
+                                    <img src="../../assets/images/svg/nomeat.svg">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="btn btn-light" href="#step"  data-slide="next">Continue</div>
+                    </div>
+                    <!-- select meat-->
+
+                    <!-- select veggies-->
+                    <div class="carousel-item diet-step-3">
+
+                        <div class="d-inline-block">
+                            <h2 class="intro_featured_word">
+                                Veggies
+                            </h2>
+                        </div>
+
+                        <div class="intro_layer" data-animation="fadeInUp">
+                            <h6 class="intro_featured_word">
+                                PLEASE SELECT WHICH VEGGIES YOU WOULD LIKE TO BE INCLUDED
+                            </h6>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="svg-material svg-select" id="broccoli">
+                                    <img src="../../assets/images/svg/beef.svg">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="svg-material svg-select" id="mushrooms">
+                                    <img src="../../assets/images/svg/pork.svg">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="svg-material svg-select" id="zucchini">
+                                    <img src="../../assets/images/svg/chicken.svg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row divider-25">
+                            <div class="col-sm-4">
+                                <div class="svg-material svg-select" id="cauliflower">
+                                    <img src="../../assets/images/svg/bacon.svg">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="svg-material svg-select" id="asparagus">
+                                    <img src="../../assets/images/svg/fish.svg">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="svg-material svg-select" id="avocado">
+                                    <img src="../../assets/images/svg/nomeat.svg">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="btn btn-light" href="#step" data-slide="next">Continue</div>
+                    </div>
+                    <!-- select veggies-->
+
+                    <!-- select product-->
+                    <div class="carousel-item diet-step-3">
+
+                        <div class="d-inline-block">
+                            <h2 class="intro_featured_word">
+                                Products
+                            </h2>
+                        </div>
+
+                        <div class="intro_layer" data-animation="fadeInUp">
+                            <h6 class="intro_featured_word">
+                                PLEASE SELECT WHICH PRODUCTS YOU WOULD LIKE TO BE INCLUDED
+                            </h6>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="svg-material svg-select" id="egg">
+                                    <img src="../../assets/images/svg/beef.svg">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="svg-material svg-select" id="nuts"> 
+                                    <img src="../../assets/images/svg/pork.svg">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="svg-material svg-select" id="cheese">
+                                    <img src="../../assets/images/svg/chicken.svg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row divider-25">
+                            <div class="col-sm-4">
+                                <div class="svg-material svg-select" id="cottageCheese">
+                                    <img src="../../assets/images/svg/bacon.svg">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="svg-material svg-select" id="butter">
+                                    <img src="../../assets/images/svg/fish.svg">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="svg-material svg-select" id="coconut">
+                                    <img src="../../assets/images/svg/nomeat.svg">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="btn btn-light" href="#step"  data-slide="next">Continue</div>
+                    </div>
+                    <!-- select product-->
+
+                    <!-- select physical-->
+                    <div class="carousel-item diet-step-2">
+                        <div class="intro_layers_wrapper">
+                            <div class="intro_layers">
+                                <div class="d-inline-block">
+                                    <h2 class="intro_featured_word">
+                                        DESCRIBE A TYPICAL DAY FOR YOU
+                                    </h2>
+                                </div>
+
+                                <div class="intro_layers flex-btn" data-animation="fadeInUp">
+                                    <div class="btn btn-light" href="#step"  data-slide="next">AT THE OFFICE</div>
+                                    <div class="btn btn-light" href="#step"  data-slide="next">AT THE OFFICE, BUT I GO OUT ON A REGULAR BASIS</div>
+                                    <div class="btn btn-light" href="#step"  data-slide="next">I SPEND THE BETTER PART OF THE DAY ON FOOT</div>
+                                    <div class="btn btn-light" href="#step"  data-slide="next">MANUAL LABOR</div>
+                                    <div class="btn btn-light" href="#step"  data-slide="next">I MOSTLY STAY AT HOME</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- select physical-->
+
+                    <!-- select true or false-->
+                    <div class="carousel-item diet-step-2">
+                        <div class="intro_layers_wrapper">
+                            <div class="intro_layers">
+                                <div class="d-inline-block">
+                                    <h2 class="intro_featured_word">
+                                        WHICH OF THE FOLLOWING IS TRUE FOR YOU
+                                    </h2>
+                                </div>
+
+                                <div class="intro_layers divider-35 flex-btn" data-animation="fadeInUp">
+                                    <div class="btn btn-light" href="#step"  data-slide="next">I DO NOT GET ENOUGH SLEEP</div>
+                                    <div class="btn btn-light" href="#step"  data-slide="next">I EAT LATE AT NIGHT</div>
+                                    <div class="btn btn-light" href="#step"  data-slide="next">I CONSUME A LOT OF SALT</div>
+                                    <div class="btn btn-light" href="#step"  data-slide="next">I CANNOT GIVE UP EATING SWEETS</div>
+                                    <div class="btn btn-light" href="#step"  data-slide="next">I LOVE SOFT DRINKS</div>
+                                    <div class="btn btn-light" href="#step"  data-slide="next">None of the above</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- select true or false-->
+
+                    <!-- select measurements-->
+                    <div class="carousel-item diet-step-4">
+                        <div class="intro_layers">
+                            <div class="d-inline-block">
+                                <h2 class="intro_featured_word">
+                                    MEASUREMENTS
+                                </h2>
+                            </div>
+
+                            <div class="intro_layers divider-35 flex-btn" data-animation="fadeInUp">
+
+                                <p class="form-row form-row-wide">
+                                    <input type="text" class="input-text" placeholder="Age" autocomplete="organization" #age required>
+                                </p>
+                                <p class="form-row form-row-wide">
+                                    <input type="text" class="input-text" id="height" placeholder="Height(cm)" autocomplete="organization" #height required>
+                                </p>
+                                <p class="form-row form-row-wide">
+                                    <input type="text" class="input-text" id="weight" placeholder="Weight(kg)" autocomplete="organization" #weight required>
+                                </p>
+                                <p class="form-row form-row-wide">
+                                    <input type="text" class="input-text" id="target_weight" placeholder="Target Weight(kg)" autocomplete="organization" #target_weight required>
+                                </p>
+
+                                <div class="btn btn-light" href="#step"  data-slide="next" (click)="setProfile()">Continue</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- select measurements-->
+
+                   <!-- processing plan-->
+                    <div class="carousel-item diet-step-5">
+                        <div class="intro_layers">
+                            <div class="d-inline-block">
+                                <h2 class="intro_featured_word">
+                                    PROCESSING MEAL PLAN
+                                </h2>
+                            </div>
+
+                            <div class="intro_layers divider-140 flex-btn" data-animation="fadeInUp">
+                                <div class="chart" data-size="240" data-percent="100" data-line="4" data-bgcolor="#e5e5e5" data-trackcolor="#82b440" data-speed="4100">
+                                    <div class="chart-meta">
+                                        <strong class="percent color-darkgrey"></strong>
+                                        <h4 class="text-uppercase thin">processing</h4>
+                                    </div>
+                                </div>
+
+                                <a [routerLink]="['/result']" routerLinkActive="router-link-active" ><div class="btn btn-light">Continue</div></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- processing plan-->
+
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
