@@ -84,10 +84,12 @@ export class ShowDietComponent implements OnInit {
     }
     //end select products
 
+    // example data
     this.sendData = ({
       'cal': this.calories,
       'material': this.material
     })
+    //end example data
 
     this.http.post<any>('http://localhost:8000/api/getdietplan', this.sendData)
     .subscribe( (response) => {
