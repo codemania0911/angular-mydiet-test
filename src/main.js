@@ -509,7 +509,6 @@ function documentReadyInit() {
 		});
 	}
 
-
 	//toggle mobile menu
 	$('.page_header .toggle_menu, .page_toplogo .toggle_menu').on('click', function(){
 		$(this)
